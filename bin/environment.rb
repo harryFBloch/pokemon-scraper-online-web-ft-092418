@@ -7,6 +7,7 @@ require 'pry'
 require_relative "../lib/pokemon"
 require_relative "../lib/scraper"
 require_relative "sql_runner"
+#require_relative "../db/hp.sql"
 
 @db = SQLite3::Database.new('../pokemon.db')
 @db.execute("DROP TABLE IF EXISTS pokemon;")
